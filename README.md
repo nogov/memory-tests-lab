@@ -5,10 +5,11 @@ The tests are executed within a Docker container that has been configured with a
 ## Status
 ![Unit tests in Docker](https://github.com/nogov/memory-tests-lab/actions/workflows/docker-tests.yml/badge.svg)
 
-## Requirements
+## Running the code locally
+
+Requirements:
 - Docker
 
-## Running the code locally
 ```bash
 git clone <repo-url>
 cd memory-tests
