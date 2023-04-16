@@ -11,8 +11,8 @@ Requirements:
 - Docker
 
 ```bash
-git clone <repo-url>
-cd memory-tests
+git clone <repo-url> <repo-folder>
+cd <repo-folder>
 sudo chmod +x ./run.sh ; sudo ./run.sh
 ```
 
