@@ -1,12 +1,14 @@
 # Memory tests example
-This repository contains a set of unit tests that verify the behavior of value types and reference types, as well as demonstrate the throwing of the `OutOfMemoryException` when the system reaches its memory limit. The tests are executed within a Docker container that has been configured with a 4GB memory limit.
+This repository contains a set of unit tests that verify the behavior of value types and reference types, as well as demonstrate the throwing of the `OutOfMemoryException` when the system reaches its memory limit.
+The tests are executed within a Docker container that has been configured with a 4GB memory limit.
+
+## Status
+![Unit tests in Docker](https://github.com/nogov/memory-tests-lab/actions/workflows/docker-tests.yml/badge.svg)
 
 ## Requirements
 - Docker
 
-## Running the Code
-Clone the repo to your local machine:
-
+## Running the code locally
 ```bash
 git clone <repo-url>
 cd memory-tests
