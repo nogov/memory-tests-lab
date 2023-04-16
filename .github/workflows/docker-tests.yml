@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 env:
-    IMAGE_NAME: memory-tests:$(date +%s)
+    IMAGE_NAME: memory-tests
     CONTAINER_NAME: memory-tests-container
 
 jobs:
@@ -19,6 +19,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag $IMAGE_NAME
+      run: docker -t $IMAGE_NAME .
     - name: Run the container
       run: docker run --memory 4g --name $CONTAINER_NAME $IMAGE_NAME
